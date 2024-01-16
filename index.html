@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- Google Font -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+</head>
+  
+<!-------->
+
+<body>
+  <div class="nav">
+    <ul>
+      <li>
+        <a href="https://www.notion.so/fatishub/My-Dashboard-885b824480e8416a84766d2c556a9d8e?pvs=4" onclick="navigate(this.id)" class="key c27 fn">
+          <span id="home">Home<br>
+            <i class="fa-solid fa-house">
+            </i>
+          </span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.notion.so/fatishub/Daily-72693b51fd1c4bf08727a4d3dee1c2dd?pvs=4#f98d1c04798846719377632036b00114" onclick="navigate(this.id)" class="key c112 fn">
+          <span id="inbox">inbox<br>
+            <i class="fa-solid fa-inbox">
+            </i>
+          </span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.notion.so/fatishub/Daily-72693b51fd1c4bf08727a4d3dee1c2dd?pvs=4" onclick="navigate(this.id)" class="key c113 fn">
+          <span id="planner">planner<br>
+            <i class="fa-solid fa-book"></i </span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.notion.so/fatishub/Business-5449adad975b4c00b8484f68bf5f1541?pvs=4" onclick="navigate(this.id)" class="key c115 fn">
+          <span id="business">work<br>
+            <i class="fa-solid fa-briefcase"></i>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.notion.so/fatishub/Learning-a4747ce62b9a486e9ac92ffb884dbde8?pvs=4" onclick="navigate(this.id)" class="key c116 fn">
+          <span id="learning">learning<br>
+            <i class="fa-solid fa-brain"></i></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.notion.so/fatishub/Note-fc639ee7deb14626a9751780bfa91ac6?pvs=4" onclick="navigate(this.id)" class="key c117 fn">
+          <span id="notes">notes<br>
+            <i class="fa-solid fa-clipboard"></i>
+          </span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.notion.so/fatishub/Journal-5cafb07dfb474dbcb0cc5003131cad41?pvs=4" onclick="navigate(this.id)" class="key c120 fn">
+          <span id="journal">journal<br>
+            <i class="fa-solid fa-pen-nib"></i></span>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+<style>
+
+  * {margin: 0; padding: 0;}
+
+body {
+	background: #f8f8f8;
+}
+.nav {
+  position:absolute;
+	z-index: 20;
+	margin: 5px auto 20px;
+  width: 950px;
+	height: 70px;
+	background: #bbb;
+	background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.27, rgb(212,216,219)),
+    color-stop(0.64, rgb(213,217,220)),
+    color-stop(0.95, rgb(230,233,235)),
+    color-stop(1, rgb(191,191,191))
+);
+	-moz-border-radius-topleft: 7px 21px;
+	-moz-border-radius-topright: 7px 21px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 7px 21px;
+	border-top-right-radius: 7px 21px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 25px 15px 5px 9px;
+	-webkit-box-shadow:  
+		inset 0 0 8px #bbb,
+		0 1px 0 #aaa,
+		0 4px 0 #bbb,
+		0 10px 30px #ddd;
+	-moz-box-shadow:  
+		inset 0 0 8px #bbb,
+		0 1px 0 #aaa,
+		0 4px 0 #bbb,
+		0 10px 30px #ddd;
+	box-shadow:  
+		inset 0 0 8px #bbb,
+		0 1px 0 #aaa,
+		0 4px 0 #bbb,
+		0 10px 30px #ddd;}
+
+ul {list-style-type: none; width: 910px; margin:  auto;}
+li {float: left;}
+
+
+.key{
+	display: block;
+	color: #aaa;
+	font: bold 9pt arial;
+	text-decoration: none;
+	text-align: center;
+	width: 120px;
+	height: 41px;
+	margin: 5px;
+	background: #eff0f2;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border-top: 1px solid #f5f5f5;
+	-webkit-box-shadow: 
+		inset 0 0 25px #e8e8e8,
+		0 1px 0 #c3c3c3,
+		0 2px 0 #c9c9c9,
+		0 2px 3px #333;
+	-moz-box-shadow: 
+		inset 0 0 25px #e8e8e8,
+		0 1px 0 #c3c3c3,
+		0 2px 0 #c9c9c9,
+		0 2px 3px #333;
+	box-shadow: 
+		inset 0 0 25px #e8e8e8,
+		0 1px 0 #c3c3c3,
+		0 2px 0 #c9c9c9,
+		0 2px 3px #333;
+	text-shadow: 0px 1px 0px #f5f5f5;
+	filter: dropshadow(color=#f5f5f5, offx=0, offy=1);}
+
+.key:active, .keydown {
+	color: #888;
+	background: #ebeced;
+	margin: 7px 5px 3px;
+	-webkit-box-shadow:
+		inset 0 0 25px #ddd,
+		0 0 3px #333;
+	-moz-box-shadow: 
+		inset 0 0 25px #ddd,
+		0 0 3px #333;
+	box-shadow: 
+		inset 0 0 25px #ddd,
+		0 0 3px #333;
+	border-top: 1px solid #eee;}
+	
+.fn span {
+	display: block;
+	margin: 8px 0px 0 0;
+	text-align: center;
+	font: bold 8pt arial;
+	text-transform: uppercase;}
+
+
+.key :hover {
+  color: grey;}
+
+</style>
+
+<script>
+$(window).keydown(function(e) {
+    let key = (e.key) ? e.key : String.fromCharCode(e.which);
+    $('.key.c' + key).addClass('keydown');
+    console.log(key);
+});
+
+$(window).keyup(function(e) {
+    let key = (e.key) ? e.key : String.fromCharCode(e.which);
+    $('.key.c' + key).removeClass('keydown');
+});
+
+
+let direction = "horizontal";
+
+function navigate(id) {
+    if (id == 'home') {
+        window.open("https://www.notion.so/fatishub/My-Dashboard-885b824480e8416a84766d2c556a9d8e?pvs=4", 'Home').focus();
+    } else if (id == "inbox") {
+        window.open("https://www.notion.so/fatishub/Daily-72693b51fd1c4bf08727a4d3dee1c2dd?pvs=4#f98d1c04798846719377632036b00114", 'tasks').focus();
+    } else if (id == "planner") {
+        window.open("https://www.notion.so/fatishub/Daily-72693b51fd1c4bf08727a4d3dee1c2dd?pvs=4", 'planner').focus();
+    } else if (id == "work") {
+        window.open("https://www.notion.so/fatishub/Business-5449adad975b4c00b8484f68bf5f1541?pvs=4", 'work').focus();
+    } else if (id == "learning") {
+        window.open("https://www.notion.so/fatishub/Learning-a4747ce62b9a486e9ac92ffb884dbde8?pvs=4", 'learning').focus();
+    } else if (id == "notes") {
+        window.open("https://www.notion.so/fatishub/Note-fc639ee7deb14626a9751780bfa91ac6?pvs=4", 'notes').focus();
+    } else if (id == "journal") {
+        window.open("https://www.notion.so/fatishub/Journal-5cafb07dfb474dbcb0cc5003131cad41?pvs=4", 'journal').focus();
+    }
+}
+  
+</script>
+</body>
+</html>
